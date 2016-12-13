@@ -6,7 +6,7 @@ class UserList extends Component {
   componentWillMount() {
     this.props.fetchUsers();
   }
-  
+
   renderUser(user) {
     return (
       <div className="card card-block">
@@ -19,7 +19,7 @@ class UserList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="user-list">
         {this.props.users.map(this.renderUser)}
       </div>
     );
